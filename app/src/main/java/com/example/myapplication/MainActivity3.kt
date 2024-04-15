@@ -83,6 +83,7 @@ class MainActivity3 : AppCompatActivity() {
                 Toast.makeText(this, "Successfully Singed Up"+it.exception, Toast.LENGTH_SHORT).show()
                 addDatatoFirebase(n, c, a)
             } else {
+                Log.d("Debug Error", it.exception.toString())
                 Toast.makeText(this, "Singed Up Failed!"+it.exception, Toast.LENGTH_SHORT).show()
             }
         }

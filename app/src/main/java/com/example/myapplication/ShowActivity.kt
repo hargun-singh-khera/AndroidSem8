@@ -37,7 +37,7 @@ class ShowActivity : AppCompatActivity() {
         dbRef = FirebaseDatabase.getInstance().getReference("Employees")
         dbRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                empList.clear()
+//                empList.clear()
                 // proceed if data exists
                 if (snapshot.exists()){
                     for (empSnap in snapshot.children){
